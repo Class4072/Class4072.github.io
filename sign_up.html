@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../inchan/assets/css/main.css" />
+	<title>Sign Up</title>
+</head>
+
+<body class="subpage">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+
+						<!-- Logo -->
+						<h1><a href="../inchan/sign_up.html" id="logo">Sign Up</a></h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<a href="../inchan/index.html">Mainpage</a>
+							<a href="../inchan/introduce.html">Introduce</a>
+							<a href="../inchan/part_time_job.html">Part time job</a>
+							<a href="../inchan/roadmap.html">Roadmap</a>
+							<a href="../inchan/sign_up.html">Sign Up</a>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Content -->
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+
+						<!-- Main Content -->
+						<section>
+							<header>
+								<h2>회원가입</h2>
+								<h3>----------------</h3>
+							</header>
+
+							<!-- Sign up Content -->
+
+							<!-- 주소에 줄줄이 붙어보내면 get / 값만 모내면 post -->
+							<form action="javascript:alert('가입성공');" method="post" name="memberFrm">
+
+								<fieldset>
+									<legend> 회원가입 </legend>
+									<ul>
+										<!-- em : 진하게, 강조 -->
+										<!-- id : lable의 for랑 연결된 부분 / name은 다른 파일로 넘겨줄 파라미터 명 -->
+										<li>
+											<label class="reg" for="userId"> 아이디 <em> * </em> </label>
+											<input type="text" id="userId" name="userId" size="20" autocomplete="on">
+										</li>
+
+										<li> <label class="reg" for="pwd"> 비밀번호 <em> * </em> </label>
+											<input type="password" id="pwd" name="pwd" size="20" required>
+										</li>
+
+										<li> 
+											<label class="reg" for="pwdCheck"> 비밀번호 확인 </label>
+											<input type="password" id="pwdCheck" name="pwdCheck" size="20" required>
+										</li>
+
+										<li> 
+											<label class="reg" for="userName"> 이름 <em> * </em> </label>
+											<input type="text" id="userName" name="userName" size="20" required>
+										</li>
+
+										<li> 
+											<label class="reg" for="ssn1"> 주민등록번호 <em> * </em> </label>
+											<input type="text" id="ssn1" name="ssn1" size="10" required>
+											
+											<label class="reg" for="ssn2"> </label>
+											<input type="password" id="ssn2" name="ssn2" size="10" required>
+										</li>
+
+										<li> 
+											<label class="reg" for="email"> 메일주소 <em> * </em> </label>
+											<input type="email" id="email" name="email" size="25" required>
+										</li>
+
+										<li> 
+											<label class="reg" for="tel1"> 전화 번호 <em> * </em>  </label>
+											<input type="text" id="tel1" name="tel1" size="5">
+											
+											<label class="reg" for="tel2"></label>
+											<input type="text" id="tel2" name="tel2" size="5">
+											
+											<label class="reg" for="tel3"></label>
+											<input type="text" id="tel3" name="tel3" size="5">
+										</li>
+
+
+									</ul>
+								</fieldset>
+								<br>
+								<fieldset class="sendform">
+									<input type="submit" value="가입하기">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="reset" value="다시쓰기">
+								</fieldset>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Top Botton -->
+		<input class="topbtn" type="button" onclick="topbtn()">
+
+		<script src="../inchan/assets/js/util.js"></script>
+
+	</div>
+
+	
+
+	</div>
+
+
+
+</body>
+
+</html>

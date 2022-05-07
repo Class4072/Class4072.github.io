@@ -1,0 +1,301 @@
+html, head, meta, link, title, body, div, section, h1, a, nav,
+p, br, h2, h3, input, script, header, ul, li, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+	
+header, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+input {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+/* Basic */
+
+	html {
+		box-sizing: border-box;
+	}
+
+	body {
+		background: #D4D9DD url("images/bg03.jpg");
+		color: #474f51;
+		font-size: 13.5pt;
+		line-height: 1.85em;
+		font-weight: 300;
+	}
+
+	input {
+		color: #474f51;
+		font-size: 13.5pt;
+		line-height: 1.85em;
+		font-weight: 300;
+	}
+
+	ul, p {
+		margin: 0 0 2em 0;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+/* Container */
+
+	.container {
+		margin: 0 auto;
+		width: 1000px;
+	}
+
+/* Row */
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+	}
+
+		.row > * {
+			box-sizing: border-box;
+		}
+
+		.row > .col-1 {
+			width: 25%;
+		}
+
+		.row > .col-2 {
+			width: 33.33333%;
+		}
+
+		.row > .col-3 {
+			width: 50%;
+		}
+
+		.row > .col-4 {
+			width: 66.66667%;
+		}
+
+		.row > .col-5 {
+			width: 75%;
+		}
+
+		.row > .col-6 {
+			width: 100%;
+		}
+
+		.row {
+			margin-top: -25px;
+			margin-left: -25px;
+		}
+
+			.row > * {
+				padding: 25px 0 0 25px;
+			}
+
+/* Header */
+
+	#header {
+		position: relative;
+		background: #3B4346 url("images/bg01.jpg");
+		border-bottom: solid 1px #272d30;
+		box-shadow: inset 0px -1px 0px 0px #51575a;
+		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
+		width: 1000;
+	}
+
+		#header > .container {
+			position: relative;
+			min-height: 155px;
+		}
+
+		#header h1 {
+			position: absolute;
+			left: 0;
+			bottom: 35px;
+			font-size: 2.5em;
+		}
+
+			#header h1 a {
+				color: #fff;
+				text-decoration: none;
+			}
+			
+
+		#header nav {
+			position: absolute;
+			right: 0;
+			bottom: 35px;
+			font-weight: 200;
+		}
+
+			#header nav a {
+				color: #c6c8c8;
+				text-decoration: none;
+				font-size: 1.2em;
+				margin-left: 40px;
+				outline: 0;
+			}
+
+				#header nav a:hover {
+					color: #f6f8f8;
+				}
+
+		.subpage #header > .container {
+			height: 155px;
+		}
+
+/* Banner */
+
+	#banner {
+		border-top: solid 1px #222628;
+		box-shadow: inset 0px 1px 0px 0px #3e484a;
+		padding: 35px 0 35px 0;
+		color: #fff;
+	}
+
+		#banner p {
+			font-size: 2em;
+			font-weight: 200;
+			line-height: 1.25em;
+			padding-right: 1em;
+			margin: 0 0 1em 0;
+		}
+
+/* Features */
+
+	#features {
+		background: #353D40 url("images/bg02.jpg");
+		border-bottom: solid 1px #272e31;
+		padding: 45px 0 45px 0;
+		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
+		color: #a0a8ab;
+	}
+
+	#features h2 {
+		font-size: 1.45em;
+		color: #fff;
+		margin: 0 0 0.25em 0;
+	}
+
+
+
+/* Content */
+
+	#content {
+		background: #f7f7f7 url("images/bg04.png");
+		border-top: solid 1px #fff;
+		padding: 45px 0 45px 0;
+	}
+
+		#content section {
+			background: #fff;
+			padding: 40px 30px 45px 30px;
+			box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.1);
+			margin: 0 0 25px 0;
+		}
+
+		#content h2 {
+			font-size: 1.5em;
+			color: #373f42;
+			margin: 0 0 0.25em 0;
+		}
+
+		#content h3 {
+			color: #96a9b5;
+			font-size: 1em;
+		}
+
+		#content header {
+			margin: 0 0 2em 0;
+		}
+
+
+/* Footer */
+
+	#footer {
+		padding: 45px 0 45px 0;
+		text-shadow: 1px 1px 1px white;
+		color: #546b76;
+		text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+	}
+
+
+
+/* Top Botton */
+
+	img {
+		border-radius: 5%;
+	}
+	
+	  .topbtn {
+		top: 90%;
+		left: 94.2%;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		border: 0;
+		outline: 0;
+		background-image: url("images/top3.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: fixed;
+		z-index: 2;
+	  }
+
+/* Sign up */
+
+	form fieldset {
+		margin-left: auto;
+		margin-right: auto;
+		width: 500px;
+		background-color: #F7F7F7;
+		line-height: 4.5ch;
+	}
+
+	form legend {
+		font-size: 18px;
+		color: #708090;
+		font-weight: 600;
+	}
+
+	form label.reg {
+		font-size: 15px;
+		width: 120px;
+		float: left;
+	}
+
+	form label em {
+		font-size: 15px;
+		color: red;
+		font-weight: 800;
+	}
+
+	form ul li {
+		list-style: none;
+	}
+
+	form fieldset.sendform {
+		text-align: center;
+	}
+	  
+	
